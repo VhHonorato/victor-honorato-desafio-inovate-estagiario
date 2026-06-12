@@ -1,0 +1,41 @@
+
+[
+    {
+        "produto": "Arroz",
+        "quantidade": 2,
+        "precoUnitario": 5.90
+    },
+    {
+        "produto": "Feijão",
+        "quantidade": 3,
+        "precoUnitario": 7.45
+    },
+       {
+        "produto": "Farinha",
+        "quantidade": 2,
+        "precoUnitario": 3.12
+    },
+    {
+        "produto": "Óleo",
+        "quantidade":1,
+        "precoUnitario": 2.3
+    },
+    {
+        "produto": "Açúcar",
+        "quantidade": 1,
+        "precoUnitario": 4.67
+    },
+    {
+        "produto": "Manteiga",
+        "quantidade": 2,
+        "precoUnitario": 25.94 
+    },
+    {
+        "produto": "Leite Líquido UHT",
+        "quantidade": 12,
+        "precoUnitario": 6.2
+    }
+
+
+
+]
