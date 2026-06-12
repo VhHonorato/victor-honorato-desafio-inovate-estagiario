@@ -2,7 +2,7 @@
 [
     {
         "produto": "Arroz",
-        "quantidade": 2,
+        "quantidade": 3,
         "precoUnitario": 5.90
     },
     {
@@ -23,7 +23,7 @@
     {
         "produto": "Açúcar",
         "quantidade": 1,
-        "precoUnitario": 4.67
+        "precoUnitario": -4.67
     },
     {
         "produto": "Manteiga",
