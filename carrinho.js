@@ -31,15 +31,7 @@ try {
     };
     if(!deuErro){                   //Validação para dar continuidade no algoritmo quando não existe erro.
         if(valorTotal >= 100){
-        valorTotalComDesconto = valorTotal-(valorTotal * 0.10);
-        console.log("DESCONTO DESBLOQUEADO! --- 10% DE DESCONTO APLICADO");
-        console.log(`Valor total da compra: R$${valorTotal.toFixed(2)}`)
-        console.log(`Valor do desconto: R$${(valorTotal * 0.10).toFixed(2)}`)
-        console.log(`Valor total com desconto: R$${valorTotalComDesconto.toFixed(2)}`)
-        }else{
-        console.log(`Valor total da compra: R$${valorTotal.toFixed(2)}`)
-        }if(valorTotal >= 100){                     // Implementação do desconto para compras com valores acima de R$ 100,00
-        valorTotalComDesconto = valorTotal-(valorTotal * 0.10);
+        valorTotalComDesconto = valorTotal-(valorTotal * 0.10);  // Implementação do desconto para compras com valores acima de R$ 100,00
         console.log("DESCONTO DESBLOQUEADO! --- 10% DE DESCONTO APLICADO");
         console.log(`Valor total da compra: R$${valorTotal.toFixed(2)}`)
         console.log(`Valor do desconto: R$${(valorTotal * 0.10).toFixed(2)}`)
