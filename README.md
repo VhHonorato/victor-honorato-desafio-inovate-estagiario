@@ -24,4 +24,4 @@ node carrinho.js
 
 * `carrinho.js`: Script principal contendo a lógica de leitura, validação e cálculo do valor total com ou sem desconto.
 * `produtos.json`: Arquivo de dados que contém os itens do carrinho (nome do produto, quantidade e preço unitário).
-* `parte02-sql`: Arquivo com as resolução das quesões da parte 2 da avaliação.
+* `parte02-sql`: Arquivo com as resoluções das quesões da parte 2 da avaliação.
