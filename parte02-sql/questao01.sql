@@ -27,7 +27,7 @@ INSERT INTO compras (id_compra, id_produto, quantidade) VALUES
 (103, 3, 3);
 
 
--- Query para retornar o valor total de cada compra
+-- Questão 01 - Query para retornar o valor total de cada compra
 
 SELECT 
   c.id_compra,
@@ -36,3 +36,13 @@ SELECT
   p.preco_unitario,
   (c.quantidade * p.preco_unitario) AS valor_total_da_compra
 FROM compras c INNER JOIN produtos p ON c.id_produto = p.id_produto;
+
+--Questão 02 - Query para retornar o produto mais vendido
+SELECT 
+  p.id_produto,
+  p.nome_produto,
+  SUM(c.quantidade) AS quantidade_total_comprada
+FROM produtos p INNER JOIN compras c ON p.id_produto = c.id_produto
+GROUP BY p.id_produto, p.nome_produto
+ORDER BY quantidade_total_comprada DESC
+LIMIT 1;
