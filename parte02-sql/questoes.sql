@@ -46,3 +46,17 @@ FROM produtos p INNER JOIN compras c ON p.id_produto = c.id_produto
 GROUP BY p.id_produto, p.nome_produto
 ORDER BY quantidade_total_comprada DESC
 LIMIT 1;
+
+-- Questão 03 - Query para retornar a lista de todos os produtos e quantidade total de unidades compradas de cada um.
+
+-- Inserido um item para testar a condição de listagem de produtos que não tenham compras registradas.
+INSERT INTO produtos(id_produto, nome_produto, preco_unitario) VALUES
+  (4,'Farinha',4); 
+
+SELECT 
+p.id_produto,
+p.nome_produto,
+COALESCE(SUM(c.quantidade),0) AS quantidade_total_comprada
+FROM produtos p LEFT JOIN compras c ON p.id_produto = c.id_produto
+GROUP BY p.id_produto, p.nome_produto
+ORDER BY id_produto ASC;
